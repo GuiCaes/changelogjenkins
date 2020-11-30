@@ -1,12 +1,13 @@
 pipeline{
 	agent any
 	environment {
-        NAME = "test"
-        WORKDIR = pwd()
+        	NAME = "test"
+        	WORKDIR = pwd()
 	}
 	stages {
 		stage("First Stage") {
-            echo "hey"
+            		echo "hey"
+		}
         }
     }
     post {
