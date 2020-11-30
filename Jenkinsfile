@@ -7,7 +7,9 @@ pipeline{
 	stages {
 		stage("First Stage") {
             steps{
-                echo "hey"
+                echo "Current commit: ${env.GIT_COMMIT} (build ${BUILD_NUMBER})"
+                echo "Commit used in last build: ${env.GIT_PREVIOUS_COMMIT}"
+                echo "Commit used in last successful build: ${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT}"
             }
 		}
     }
