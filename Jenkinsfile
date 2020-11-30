@@ -6,7 +6,9 @@ pipeline{
 	}
 	stages {
 		stage("First Stage") {
-            echo "hey"
+            steps{
+                echo "hey"
+            }
 		}
     }
     post {
